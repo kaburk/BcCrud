@@ -1,0 +1,29 @@
+.bca-icon--bc_crud::before {
+    content: "\f044";
+    font-weight: 400;
+    font-family: 'Font Awesome 5 Free';
+}
+.jstree-proton .bca-icon--bc_crud {
+    color:#1b89e4;
+}
+.jstree-proton-contextmenu .bca-icon--bc_crud{
+    color:#1b89e4;
+}
+.bca-table-listup__thead-th--select .bca-checkbox,
+.bca-table-listup__tbody-td--select .bca-checkbox {
+	margin: 0px;
+}
+.bca-table-listup__tbody-td--no,
+.bca-table-listup__tbody-td--sort,
+.bca-table-listup__tbody-td--eye_catch {
+	width: 50px;
+	text-align: center;
+}
+.bca-table-listup .eye_catch-wrap,
+.bca-table-listup .eye_catch {
+	margin: 0px;
+}
+.bca-table-listup__tbody-td--date,
+.bca-table-listup__tbody-td--actions {
+	width: 100px;
+}

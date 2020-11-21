@@ -1,0 +1,20 @@
+/* サンプル：bc_sample テーマ用 */
+.bs-blog-eye-catch img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.bs-blog-post__item a {
+	margin-right: 5px;
+}
+.bs-single-post__meta a {
+	margin-right: 5px;
+}
+.bs-blog-post-return {
+	text-align: center;
+}
+.bs-blog-post-return a.bs-button-small {
+	color: #000;
+}
+.bs-main-contents, .bge-contents, .cke_editable {
+	font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
