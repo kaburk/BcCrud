@@ -323,6 +323,7 @@ class BcCrudPost extends BcCrudAppModel {
 	 * @param array $data
 	 */
 	public function createPreviewData($data) {
+
 		$post[$this->alias] = $data[$this->alias];
 		if(isset($post[$this->alias]['detail_tmp'])) {
 			$post[$this->alias]['detail'] = $post[$this->alias]['detail_tmp'];
@@ -334,14 +335,6 @@ class BcCrudPost extends BcCrudAppModel {
 				'recursive' => -1
 			]);
 			$post['BcCrudCategory'] = $category['BcCrudCategory'];
-		}
-
-		if ($data[$this->alias]['user_id']) {
-			$author = $this->User->find('first', [
-				'conditions' => ['User.id' => $data[$this->alias]['user_id']],
-				'recursive' => -1
-			]);
-			$post['User'] = $author['User'];
 		}
 
 		if (!empty($data['BcCrudTag']['BcCrudTag'])) {

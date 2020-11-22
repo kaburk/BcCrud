@@ -44,6 +44,9 @@ $this->BcBaser->js(['BcCrud.admin/bc_crud_posts/form'], false, [
 	if (empty($bcCrudContent['BcCrudContent']['use_content'])):
 		echo $this->BcForm->hidden('BcCrudPost.content');
 	endif;
+	if (empty($bcCrudContent['BcCrudContent']['use_category'])):
+		echo $this->BcForm->hidden('BcCrudPost.bc_crud_category_id', ['value' => '']);
+	endif;
  ?>
 
 <?php echo $this->BcFormTable->dispatchBefore() ?>
@@ -108,7 +111,7 @@ $this->BcBaser->js(['BcCrud.admin/bc_crud_posts/form'], false, [
 				<?php echo $this->BcForm->error('BcCrudPost.name') ?>
 			</td>
 		</tr>
-	<?php if ($bcCrudCategories): ?>
+<?php if (!empty($bcCrudContent['BcCrudContent']['use_category'])): ?>
 		<tr>
 			<th class="col-head bca-form-table__label">
 				<?php echo $this->BcForm->label('BcCrudPost.bc_crud_category_id', __d('baser', 'カテゴリー')) ?>
@@ -127,7 +130,7 @@ $this->BcBaser->js(['BcCrud.admin/bc_crud_posts/form'], false, [
 				<?php echo $this->BcForm->error('BcCrudPost.bc_crud_category_id') ?>
 			</td>
 		</tr>
-	<?php endif ?>
+<?php endif ?>
 		<tr>
 			<th class="col-head bca-form-table__label">
 				<?php echo $this->BcForm->label('BcCrudPost.eye_catch', __d('baser', 'アイキャッチ画像')) ?>
