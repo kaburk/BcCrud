@@ -21,7 +21,7 @@ $this->BcBaser->js(['BcCrud.admin/bc_crud_posts/form'], false, [
 					$bcCrudContent['BcCrudContent']['id'],
 				],
 				'id' => 'BcCrudPostForm',
-			],
+			]
 		);
 	elseif ($this->action == 'admin_edit'):
 		echo $this->BcForm->create(
@@ -34,7 +34,7 @@ $this->BcBaser->js(['BcCrud.admin/bc_crud_posts/form'], false, [
 					$this->BcForm->value('BcCrudPost.id'),
 				],
 				'id' => 'BcCrudPostForm',
-			],
+			]
 		);
 	endif;
 

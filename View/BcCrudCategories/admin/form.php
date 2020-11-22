@@ -14,7 +14,7 @@ $fullUrl = $this->BcBaser->getContentsUrl($url, true, $this->request->params['Si
 					$bcCrudContent['BcCrudContent']['id'],
 				],
 				'id' => 'BcCrudCategoryForm',
-			],
+			]
 		);
 	elseif ($this->action == 'admin_edit'):
 		echo $this->BcForm->create(
@@ -27,7 +27,7 @@ $fullUrl = $this->BcBaser->getContentsUrl($url, true, $this->request->params['Si
 					$this->BcForm->value('BcCrudCategory.id'),
 				],
 				'id' => 'BcCrudCategoryForm',
-			],
+			]
 		);
 	endif;
 

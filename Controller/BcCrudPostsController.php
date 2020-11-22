@@ -475,7 +475,7 @@ class BcCrudPostsController extends BcCrudAppController {
 		if ($this->{$this->modelClass}->delete($id)) {
 			$this->BcMessage->setSuccess(sprintf(
 					__d('baser', '「%s」を削除しました。'),
-					$post[$this->modelClass]['name'],
+					$post[$this->modelClass]['name']
 			));
 			return true;
 		} else {
