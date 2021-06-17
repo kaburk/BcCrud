@@ -14,7 +14,11 @@ export PLUGIN_NAME_2="ex_sample"
 # キャメルケース（単語の先頭を大文字、それ以外は小文字） bcCrud
 export PLUGIN_NAME_3="exSample"
 
-find . -type f -name "*.php" -o -name "*.js" -o -name "*.css" -o -name "*.md" | xargs sed -i '' -e s/BcCrud/${PLUGIN_NAME_1}/g -e s/bc_crud/${PLUGIN_NAME_2}/g -e s/bcCrud/${PLUGIN_NAME_3}/g
+# 日本語名 サンプルプラグイン
+export PLUGIN_NAME_4="さんぷる"
+
+
+find . -type f -name "*.php" -o -name "*.js" -o -name "*.css" -o -name "*.md" | xargs sed -i '' -e s/BcCrud/${PLUGIN_NAME_1}/g -e s/bc_crud/${PLUGIN_NAME_2}/g -e s/bcCrud/${PLUGIN_NAME_3}/g -e s/サンプルプラグイン/${PLUGIN_NAME_4}/g
 
 mv Config/Schema/bc_crud_categories.php Config/Schema/${PLUGIN_NAME_2}_categories.php
 mv Config/Schema/bc_crud_contents.php Config/Schema/${PLUGIN_NAME_2}_contents.php

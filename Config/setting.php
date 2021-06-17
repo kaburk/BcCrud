@@ -4,7 +4,7 @@
  */
 $config['BcContents']['items']['BcCrud'] = [
 	'BcCrudContent'	=> [
-		'title' =>  __d('baser', 'BcCrud'),
+		'title' =>  __d('baser', 'サンプルプラグイン'),
 		'multiple'	=> true,
 		'preview'	=> true,
 		'icon'	=> 'bca-icon--bc_crud',
